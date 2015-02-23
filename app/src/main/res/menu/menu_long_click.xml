@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FragmentoLista" >
+
+    <item android:id="@+id/borrar"
+        android:title="@string/borrar"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/editar"
+        android:title="@string/editar"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/subir"
+        android:title="@string/subir"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

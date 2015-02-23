@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mariangeles.practica6aad.Editar">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/localidad"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/localidad"/>
+
+            <EditText
+                android:id="@+id/calle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/calle"
+                android:layout_below="@+id/localidad"
+                android:layout_toLeftOf="@+id/cancelar"
+                android:layout_toStartOf="@+id/cancelar" />
+
+            <EditText
+                android:id="@+id/numero"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/numero"
+                android:numeric="integer"
+                android:layout_toRightOf="@+id/calle"
+                android:layout_below="@+id/localidad" />
+
+            <EditText
+                android:id="@+id/tipo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/tipo"
+                android:layout_below="@+id/numero"/>
+
+            <EditText
+                android:id="@+id/precio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/precio"
+                android:numeric="integer"
+                android:layout_below="@+id/tipo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mas"
+                android:onClick="foto"
+                android:id="@+id/button"
+                android:layout_below="@+id/precio"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mostrarFoto"
+                android:layout_below="@+id/button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aceptar"
+                android:id="@+id/aceptar"
+                android:onClick="aceptar"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/mostrarFoto" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancelar"
+                android:id="@+id/cancelar"
+                android:onClick="cancelar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/mostrarFoto" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
